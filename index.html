@@ -15,7 +15,7 @@
 	<link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css"> <!--social media links-->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link href="jzagabe1-final-doughnut.css" rel="stylesheet" type"text/css"/>
+	<link href="css/jzagabe1-final-doughnut.css" rel="stylesheet" type"text/css"/>
 </head>
 <script>
 		$( function() {
@@ -71,8 +71,6 @@
 	p img{
 		border: 6px solid #330000;
 		}
-/* --image slides style */
-
 	.mySlides {display:none}
 	.w3-left, .w3-right, .w3-badge 
 		{
@@ -83,12 +81,12 @@
 		width:33px;
 		padding:0;
 	}
-form{ 	width: 100%;
+	form{ 	width: 100%;
 		height: 100%;
 		}
 
 #menu {background-color: #180c01;
-	color: rgb(54, 235, 241);
+	color: rgb(255, 255, 255);
 	}
 #about {background-color: #330101;
 	}
@@ -99,7 +97,7 @@ form{ 	width: 100%;
 #contactus {background-color: #1a0000;
 	color: rgb(255, 255, 255);
 	}
-#contact {background-color: #660000;
+#contact {background-color: #0c0a01;
 		
 	}
 #social a{color: blue;
@@ -113,12 +111,19 @@ form{ 	width: 100%;
 .button hover{ color: blue;
 		}
 </style>
-	
 <div class="w3-top">
-	<div>
+		<div class="w3-top w3-container social w3-text-white w3-display-topright" style="padding:130px;">
+				<!-- <b><h1>Follow us</h1></b><br> -->
+			<a href="https://facebook.com/" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+			<a href="https://twitter.com/" class="link twitter" target="_parent"><span class="fa fa-twitter-square"></span></a>
+			<a href="https://github.com/" class="link github" target="_parent"><span class="fa fa-github-square"></span></a>
+			<a href="https://plus.google.com/" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
+			<a href="https://linkedin.com/" class="link linkedin" target="_parent"><span class="fa fa-linkedin-square"></span></a>        
+			<a href="https://youtube.com/" class="link youtube" target="_parent"><span class="fa fa-youtube-square"></span></a>  
+		</div>
     		<p><h1 class="w3-small w3-half w3-center w3-display-leftmiddle w3-opacity" style="width:100%"><i>
 			<span style="color:yellow">Let's Go There. </span>
-			<span style="color:red">Let's Eat There.</span><img src="donutDelightsLogoo.png" style="width:13%"></p>
+			<span style="color:red">Let's Eat There.</span><img src="images/donutDelightsLogoo.png" style="width:13%"></p>
 		</i></h1>
 	</div>
 </div>
@@ -128,10 +133,10 @@ form{ 	width: 100%;
 			<a href="http://www.csit.parkland.edu/~jzagabe1/css/donut-delights.html"
 			   class="w3-bar-item w3-button">Home</a>	<!-- Right-sided navbar links. Hide them on small screens -->
 		<div   class="w3-right w3-hide-medium">
-      		<a href="#about" class="w3-bar-item w3-button"> About us</a>
-      		<a href="#menu" class="w3-bar-item w3-button">Menu</a>
-      		<a href="#contact" class="w3-bar-item w3-button">Contact</a>
-      		<a href="#contactus" class="w3-bar-item w3-button"> More </a>
+      		<a href="#about" class="w3-bar-item w3-button fa fa-people"> About us</a>
+      		<a href="#menu" class="w3-bar-item w3-button fa fa-shopping-cart"></a>
+      		<a href="#contact" class="w3-bar-item w3-button fa fa-envelope"></a>
+      		<a href="#contactus" class="w3-bar-item w3-button fa fa-phone"></a>
     	</div>
 	</div>
 </div>
@@ -141,14 +146,14 @@ form{ 	width: 100%;
 <header>	<!-- Header -->
 	<div class="w3-content">
 		<div id="mySlidesPics" class="w3-content w3-display-container" style="width:1000%">
-			<img class="mySlides" src="backgr-donut.jpg" style="width:100%">
-			<img class="mySlides" src="ah-woow.jpg" style="width:100%">
-			<img class="mySlides" src="bakery.jpg" style="width:100%">
-			<img class="mySlides" src="donutsInCase.jpg" style="width:100%">
-			<img class="mySlides" src="four-breads.jpg" style="width:100%">
-			<img class="mySlides" src="donut-+-hot-coffee-2-copy1.jpg" style="width:100%">
-			<img class="mySlides" src="Coffee-1.jpg" style="width:100%">
-			<img class="mySlides" src="Edited.jpg" style="width:100%">
+			<img class="mySlides" src="images/backgr-donut.jpg" style="width:100%">
+			<img class="mySlides" src="images/ah-woow.jpg" style="width:100%">
+			<img class="mySlides" src="images/bakery.jpg" style="width:100%">
+			<img class="mySlides" src="images/donutsInCase.jpg" style="width:100%">
+			<img class="mySlides" src="images/four-breads.jpg" style="width:100%">
+			<img class="mySlides" src="images/donut-+-hot-coffee-2-copy1.jpg" style="width:100%">
+			<img class="mySlides" src="images/Coffee-1.jpg" style="width:100%">
+			<img class="mySlides" src="images/Edited.jpg" style="width:100%">
 	<div class="w3-center w3-container w3-section w3-large w3-text-red w3-display-bottommiddle" style="width:100%">
     		<div class="w3-left w3-white w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;Preview</div>
     		<div class="w3-right w3-white w3-hover-text-khaki" onclick="plusDivs(1)">next&#10095;</div>
@@ -166,7 +171,6 @@ form{ 	width: 100%;
 </div>
 </header>
 </div>
-
 <div id="container"> 
 <div id="content" >  <!-- Page content -->
 <div class="w3-content" style="width:100%; height:100%;">
@@ -179,8 +183,8 @@ form{ 	width: 100%;
       	<h5 class="w3-center w3-large w3-text-grey w3-hide-medium">
 			The finest in breakfast treats and coffees since 1971
 		</h5>		
-		<p class=" w3-center w3-threequarter">	
-			<img src="donut-urbana.jpg" width="100%" alt="donut">
+		<p class=" w3-center w3-half w3-text-white">	
+			<img src="images/donut-urbana.jpg" width="100%" alt="donut">
 			Doughnut Delights was started in 1971 by Melvin Furballski,
 			an immigrant baker from the far east coast of Poland. Known far and wide for his delicate pastries,
 			Melvin fled his homeland in search of a better life for his family. In 1970 he landed in New York City
@@ -197,8 +201,6 @@ form{ 	width: 100%;
 		</p>
 	</div>
 </div> 	
-
-
 <div id="contactus"class="w3-row-padding" ><!-- Contact us Section -->
 	<div class="w3-col m6 w3-large w3-hide-small w3-row w3-center">
       	<h1 class="w3-center">
@@ -209,15 +211,13 @@ form{ 	width: 100%;
 		<p/>
 </div>
 </div>
-
-
 <!-- Menu Section -->
 <div id="menu" class="w3-row-padding" style="padding-top:100px;"> 
 	
 	<h1 class="w3-center">Menu</h1><br>
 	
 		<p class=" w3-row w3-center w3-threequater">
-			<img src="Doughnuts.jpg" width="100%" alt="Donuts in a case">
+			<img src="images/Doughnuts.jpg" width="100%" alt="Donuts in a case">
 		</p>
 		<p class=" w3-row w3-center w3-quarter">
 			<strong>
@@ -228,7 +228,7 @@ form{ 	width: 100%;
 				marble twist<br> sugar raised<br> plain donut<br> plain cruller<br> honey wheat<br>
 				jelly puff<br> cream puff<br> coffee roll
 		</p>
-		<p class=" w3-row w3-center w3-quarter">
+		<p class="w3-row w3-center w3-quarter">
 			<strong>
 				Regular Donuts at $1.05:
 			</strong><br><br>
@@ -267,17 +267,8 @@ form{ 	width: 100%;
 		style="background-color:rgb(3, 0, 2)"> <!-- Footer --> 
 			<p class="w3-small w3-center">
 				&#169; 2017 Janvier Zagabe All Rights Reserved | Designed by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
-		</p>
-			<div class="w3-content social w3-text-white" style="padding:100px;">
-				<b><h1>Follow us</h1></b><br>
-			<a href="https://facebook.com/" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
-			<a href="https://twitter.com/" class="link twitter" target="_parent"><span class="fa fa-twitter-square"></span></a>
-			<a href="https://github.com/" class="link github" target="_parent"><span class="fa fa-github-square"></span></a>
-			<a href="https://plus.google.com/" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
-			<a href="https://linkedin.com/" class="link linkedin" target="_parent"><span class="fa fa-linkedin-square"></span></a>        
-			<a href="https://youtube.com/" class="link youtube" target="_parent"><span class="fa fa-youtube-square"></span></a>  
-		</div>
-	<div id="contact" class="w3-row-padding">
+			</p>
+	<div id="contact" class="w3-row-padding w3-text-white">
 		<p><strong>Doughnut Delights map below </strong>
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.
 				248211137894!2d-88.2286871852021!3d40.1144716794014!2m3!1f0!2f0!3f0!3m2!1i1024!
@@ -326,6 +317,7 @@ form{ 	width: 100%;
 </script>
 
 </div> <!--end of container-->
+
 </body>
 </html>
 
