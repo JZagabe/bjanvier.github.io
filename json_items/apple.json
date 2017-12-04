@@ -1,0 +1,10 @@
+
+{"phones":[
+	{	"name": "iPhone 8",
+		"year": 2018,
+		"price": 19999.99,
+		"brand": "Apple",
+		"image": "images/iphone8.jpg",
+		"features": ""
+	}
+]}

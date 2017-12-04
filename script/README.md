@@ -1,2 +1,0 @@
-# bjanvier.github.io
-
