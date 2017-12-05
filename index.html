@@ -107,15 +107,15 @@
             } 
 </style>
 
-<body class="w3-padding-row">  
-	<div id="bar_items" class="w3-top w3-display-topmiddle">  <!-- Navbar (sit on top) -->	
-		<div class="w3-bar w3-orange w3-card-4" style="letter-spacing:2px;">
+<body class="w3-black"> 
+    <div class="w3-container" style="height:100%; width:100%">
+	    <div id="bar_items" class="w3-top w3-display-topmiddle">  <!-- Navbar (sit on top) -->	
+		      <div class="w3-bar w3-orange w3-card-4" style="letter-spacing:2px;">
 			      <a href="#home"
 			      class="w3-bar-item w3-button">Home</a>	<!-- Right-sided navbar links. Hide them on small screens -->
 		        <div class="w3-right w3-hide-medium">
-      			<a href="#about" class="w3-bar-item w3-button fa fa-users"> About us</a>
-      			<a href="#menu" >
-              <button class="w3-bar-item w3-button fa fa-shopping-cart"
+      			<a href="#about" class="w3-button fa fa-users"> About us</a>
+      			<a href="#menu" ><button class="w3-bar-item w3-button fa fa-shopping-cart"
               onclick="document.getElementById('menu').style.display='block'" ></button></a>
       			<a href="#contact" class="w3-bar-item w3-button fa fa-phone"></a>
             <a href="#contactus" class="w3-bar-item w3-button fa fa-envelope-open"></a>
@@ -139,16 +139,17 @@
         style="padding:80px;border-radius:90px 90px 90px; height:150px">
       <i><b>ForeverCheap</b></i></h1>
   </div>
-<header class="w3-row">
+<div class="w3-container">
+<header class="-w3-padding-row">
     <div class="nav_click w3-hover-white w3-container w3-center w3-text-red w3-large w3-orange" 
-        style="padding:1px; width:100%;height:45%; border-radius:5px 5px 5px;">
+        style="width:100%;height:45%; border-radius:5px 5px 5px;">
         <p><i>click to see all the galeries</i></p>
     </div>
     <!-- galeries -->
-        <div id="galeries" class="mySlidesPics w3-container w3-display-container w3-topmiddle"
-            style="width:100%; height:250%; padding:1px">          
+    <div class="w3-padding-row">
+        <div id="galeries" class="mySlidesPics w3-container w3-display-container w3-topmiddle">          
           <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
-              <img class="myGaleries" src="images/background.jpg"></a>
+              <img class="myGaleries w3-image" src="images/background.jpg"></a>
           <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
               <img class="myGaleries" src="images/acer-predator8.jpg"></a>
           <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
@@ -213,8 +214,11 @@
          <!-- end galeries -->
      </div>
   </header>
+</div>
+
     <!-- navigation part -->
-    <div class="navigation w3-container w3-center w3-text-red w3-large w3-orange">
+<div class="w3-container">
+    <div class="navigation w3-padding-row w3-container w3-center w3-text-red w3-large w3-orange">
         <div  style="padding-top:60px;border-radius:11px 11px 11px"
               class="w3-border w3-display-topright w3-large">
            
@@ -235,10 +239,12 @@
           </p>
         </div>
       </div>
+</div>
 <!-- end of navigation -->
 
       <!--accordion will create a popup to show the user all the products from Menu Modal -->
-<div class="w3-top" id="products" >
+<div class="w3-container w3-row">
+  <div class="w3-top w3-padding-row" id="products" >
       <b><p style="border-radius:20px 20px 20px; padding:8px;" 
         class="w3-display-topleft w3-black">Products</p></b>
 <div id="menu" class="w3-modal">
@@ -416,8 +422,10 @@
 </div>
 </div>
 </div>      
+</div>
 <!-- Contact Modal -->
-<div id="contactUs" class="w3-modal ">
+<div class="w3-container">
+<div id="contactUs" class="w3-modal w3-row ">
   <div class="w3-modal-content w3-border w3-animate-zoom"
       style="background-color:black;
             box-shadow: 11px 20px 110px rgb(241, 241, 241);
@@ -446,8 +454,10 @@
     </div>
   </div>
 </div>
+</div>
 <!-- About us -->
-<div id="AboutUs" class="w3-modal">
+<div class="w3-container">
+<div id="AboutUs" class="w3-modal w3-row">
   <div class="w3-modal-content w3-ul w3-border w3-hoverable w3-animate-zoom w3-center"
       style=" background-color:rgb(21, 22, 10);box-shadow: 15px 15px 55px orange;">
       <div class="w3-container w3-orange">
@@ -494,7 +504,9 @@
       <a href="https://github.com/" target="_blank">github</a></p>
   </div>
 </div>
+</div>
 <!--membership Form -->
+<div class="w3-container w3-row">
 <div id="JoinUs" class="w3-modal" >
   <div class="w3-modal-content w3-animate-zoom w3-black w3-border w3-text-red">
     <div class="w3-content w3-black">
@@ -548,19 +560,21 @@
        </div>
     </div> 
 </div>
-    <div class="social w3-display-topleft">
+<div class="w3-container w3-row">
+    <div class="social w3-display-topleft w3-padding-row">
         <a href="https://facebook.com/" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
         <a href="https://twitter.com/" class="link twitter" target="_parent"><span class="fa fa-twitter-square"></span></a>
         <a href="https://github.com/" class="link github" target="_parent"><span class="fa fa-github-square"></span></a>
         <a href="https://plus.google.com/" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
         <a href="https://linkedin.com/" class="link linkedin" target="_parent"><span class="fa fa-linkedin-square"></span></a>        
         <a href="https://youtube.com/" class="link youtube" target="_parent"><span class="fa fa-youtube-square"></span></a>  
-    </div>    
+    </div>
+</div>    
  <!-- Footer --> 
-<footer
-                 style="height:100%;padding-top:200px; ">
+ <div class="w3-container w3-row"></div>
+<footer>
   <div id="contact"  class="w3-content w3-center w3-text-white"
-                    style="padding-top:400px; background-color:rgb(51, 2, 2)"> 
+                    style="background-color:rgb(51, 2, 2)"> 
         <p><b>Our store's map </b>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.
                 248211137894!2d-88.2286871852021!3d40.1144716794014!2m3!1f0!2f0!3f0!3m2!1i1024!
@@ -583,6 +597,7 @@
     </nav>
   </div>
 </footer>
+</div>
   <!--end of footer-->
 
 <script>
@@ -680,5 +695,6 @@
         ("img" ).show("slow");
       });
 </script>
+</div>
 </body>
 </html>
