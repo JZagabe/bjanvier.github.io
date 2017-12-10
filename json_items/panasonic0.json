@@ -1,0 +1,10 @@
+
+{"phones":[
+	{	"name": "Panasonic toughbook",
+	 	"year": 2016,
+	 	"price": 499.00,
+		"brand": "Panasonic",
+		"image": "images/toughook.jpg",
+		"features": "Panasonic Toughbook® laptops, tablets and handhelds are engineered with enterprise-grade security and can withstand drops, spills, dust and grime to perform in the harshest environments. Rugged reliability, low cost of ownership and accolades from reviewers are just a few of the reasons why Panasonic keeps winning over the world's toughest users. In today's business environment, staying connected is no longer a luxury. It's the new standard for doing business. That's why more mobile professionals are turning to the reliability and world-class wireless performance of Panasonic Toughbook® family of laptops, tablets and handhelds that feature embedded Wi-Fi and optional embedded wireless mobile broadband, delivering the “always on” connectivity demanded by the hectic, mobile lifestyles of today's workforce."		
+	}
+]}

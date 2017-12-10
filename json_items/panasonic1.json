@@ -1,0 +1,10 @@
+
+{"phones":[
+	{	"name": "Panasonic toughpad FZ-G1",
+	 	"year": 2016,
+	 	"price": 2562.00,
+		"brand": "Panasonic",
+		"image": "images/toughpad.jpg",
+		"features": "10.1-inch, HD daylight-readable, ten-point gloved multi touch + digitizer The thinnest and lightest fully-rugged, 10.1–inch, Windows 10 Pro, USB 3.0 + HDMI ports + 11 optional configurations, including a choice of bridge battery, magstripe reader, SmarCard reader, or UHF 900MHz reader. And a choice of barcode, GPS, Serial, Ethernet, MicroSD, or 2nd USB port,Wi-Fi 802.11a/b/g/n/ac, Bluetooth® and Optional integrated 4G LTE multi carrier mobile broadband with satellite GPS."		
+	}
+]}

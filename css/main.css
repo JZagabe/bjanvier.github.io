@@ -1,0 +1,183 @@
+#nav_list ul { 
+	list-style: none;
+	margin-left: 0;
+	margin-bottom: 1.5em; }
+#nav_list li { 
+	width: 200px;
+	margin-bottom: .5em;
+	border: 2px double black;
+	border-radius: 10px;
+	box-shadow: 3px 3px 0 0 #800000;
+	background-image: url("imagesPhones/right.jpg");
+	background-repeat: no-repeat;
+  background-position: 95% center;
+  padding-right:15%;
+}
+#nav_list li a {
+	display: block;
+	font-weight: bold;
+	color: rgb(95, 134, 128);
+	text-decoration: none;
+  padding: .5em 0 .5em 1em;
+}
+#main_title b{
+  font-family: 'Monsieur La Doulaise';font-size: 52px;
+  padding: 43px;
+  color: rgb(41, 16, 16);
+}
+#title {
+  font-family: 'Galada';font-size: 32px;
+}
+body, .drop_down, #try, #title, #nav_click, #main_title i b, #AboutUs, #ContactUs, #menu,#content, #JoinUs {
+  background: -webkit-linear-gradient(rgb(10, 1, 1), 
+  rgb(0, 0, 0), rgb(190, 191, 202), 
+  rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 
+  rgb(41, 5, 0));
+  background: -o-linear-gradient(rgb(17, 3, 3), 
+  rgb(0, 0, 0), rgb(131, 159, 168), 
+  rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0),
+  rgb(0, 0, 0));
+  background: -moz-linear-gradient(rgb(0, 0, 0), 
+    rgb(0, 0, 0), rgb(2, 11, 22), rgb(0, 0, 0), 
+    rgb(0, 0, 0), rgb(138, 119, 119), rgb(0, 0, 0)); 
+  background: linear-gradient(rgb(10, 5, 5), rgb(0, 0, 0), 
+    rgb(2, 25, 39), rgb(0, 7, 0), rgb(0, 0, 0), 
+    rgb(0, 0, 0), rgb(104, 88, 88));
+
+}
+
+.social {
+  position: absolute;
+  width: 1%;
+  bottom: 53%;
+  transform: translateY(59%);
+}
+
+.social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  border: 1px dashed blue;
+  background-clip: content-box;
+  padding: 10px;
+  transition: .912s;
+  margin-left: 5px;
+  font-size: 53px;
+}
+ #main_title {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 300px;
+  height: 90px;
+  border-radius: 100%;
+  border: 1px dashed blue;
+  background-clip: content-box;
+  padding-right: 350px;
+  margin-left: 5px;
+  font-size: 3px;
+}
+
+.social .link span {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social .link:hover {
+  padding: 20px;
+  color: rgb(13, 51, 68);
+  transform: translateX(15px) rotate(360deg);
+}
+
+.social .link.google-plus {
+  background-color: tomato;
+  color: white;
+}
+
+.social .link.twitter {
+  background-color: #00ACEE;
+  color: white;
+}
+
+.social .link.facebook {
+  background-color: #3B5998;
+  color: white;
+}
+.social .link.linkedin {
+    background-color: rgb(60, 95, 202);
+    color: white;
+  }
+  .social .link.github {
+    background-color:purple;
+    color: white;
+  }
+  .social .link.youtube {
+    background-color: rgb(179, 7, 7);
+    color: white;
+  }
+
+
+
+  main {
+    clear: center;
+    padding: 20px 20px 20px;
+    width: 100%;
+    /* height: 100%; */
+    float: right;
+  }
+  main h1 {
+    color: #800000;
+    font-size: 150%;
+    padding: .5em 0 .25em;
+  }
+  main h2 {
+    font-size: 120%;
+    padding-bottom: .25em;
+  }
+  main p {
+    padding-bottom: .5em;
+  }
+  main blockquote {
+    padding: 0 2em;
+    font-style: italic;
+  }
+  main ul {
+    padding: 0 0 1.5em 1.25em;
+  }
+  main li {
+    padding-bottom: .35em;
+  }
+  
+  main img {
+    float: right;
+    margin: 1em 0 1em 1em;
+    border: 1px solid black;
+  }
+  
+  aside {
+    width: 99%;
+    float: left;
+    background-color: rgb(39, 4, 4);
+    box-shadow: 5px 5px;
+  }
+  aside h1 {
+    color: #800000;
+    font-size: 150%;
+    padding: .5em 0 .25em;
+  }
+  aside h2 {
+    font-size: 120%;
+    padding-bottom: .25em;
+  }
+  aside img {
+    padding-bottom: 1em;
+  }
+  /* the styles for the navigation list */
+ 
