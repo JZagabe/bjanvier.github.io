@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -708,3 +709,747 @@ a. When the user clicks anywhere outside of the modal, close it
 </script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ForeverCheap</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="css/main.css" rel="stylesheet" type"text/css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!-- accordion -->
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="../jquery-ui-1.12.1.custom/jquery-ui.min.css">
+<!--  beggining jquery.UI for autocomplete  in search engine-->
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- end of autocomplete engine links-->
+<script src="script/jquery.validate.min.js"></script>
+<script src="script/additional-methods.min.js"></script>
+<script src="script/member.js"></script>
+<script src="script/foreverCheaper.js"></script>
+<script type="text/javascript" src="script/phones.js"></script>
+<script src="script/lightbox.min.js"></script> 
+
+
+<script>
+  // if the user has started inputting but didn't finish, this code will make alert 
+    $(document).ready(function(){
+        $("#search").blur(function(){
+            alert("Are you done searching?");
+              $("#search").show();
+                $("#search:input").remove();
+        });
+    });
+</script>
+
+<!-- // only items in the object below will be searchable -->
+<script> 
+        $( function() {
+              var availableTags = [
+                                  "iPhone 8",
+                                  "Acer",
+                                  "Asp",
+                                  "Acer Predator 8",
+                                  "Alcatel",
+                                  "Alcatel",
+                                  "Allview X4 Soul Mini",
+                                  "Amazon",
+                                  "Blackberry",
+                                  "HP Envy",
+                                  "HP Elite",
+                                  "Intex aqua",
+                                  "Motorola",
+                                  "Nokia Edge",
+                                  "Panasonic toughbook",
+                                  "Panasonic toughpad",
+                                  "Panasonic Eluga",
+                                  "Samsung galaxy J5 edge",
+                                  "LG G3",
+                                  "Sony Xperia",
+                                  "Vivo Xplay",
+                                  ];
+                              $( "#search" ).autocomplete({
+                             source: availableTags
+                             });
+                          });
+                </script>
+                <!--this accordion's script will be applied to the products as a pop-up -->
+                <script>
+                         $(document).ready(function() {
+                        $("#products").accordion(
+                        { 
+                        event: "mouseover",
+                        heightStyle: "content",
+                        collapsible: true 
+                        });
+                      });
+              </script>
+<style>
+      body,h1,h5{
+                font-family: "Raleway", sans-serif}
+      body, html, header {
+                        height: 50%;
+                        }
+      .navigation {
+                    background-position: center;
+                    background-size: cover;
+                    }
+      .w3-badge {
+		            height:33px;
+		            width:33px;
+	            	padding:13px;
+               } 
+      .w3-left, .w3-right, .w3-badge 
+		          {
+		          cursor:pointer;
+              }
+       #search{
+              color:white;
+            background-color: whitesmoke;
+            } 
+</style>
+</head>
+<body class="w3-black">
+<!-- Navbar -->
+<div class="w3-top">
+       <div class="w3-bar w3-black w3-card">
+          <div id="bar_items" class="w3-top w3-display-topmiddle">  <!-- Navbar (sit on top) -->	
+             <div id="toolbar" class="w3-bar w3-orange w3-card-4" style="letter-spacing:2px;">
+                  <!-- autocomple engine -->
+              <div class="w3-display-topright w3-hide-small w3-right w3-content w3-text-white ui-widget w3-large" style="background-color:rgb(0, 0, 0);border-radius:10px 11px 11px;">
+                   <b><input class="w3-text-red" id="search"></b>
+                   <b><label class="" for="tags"> 
+                    <button onclick="document.getElementById('menu').style.display='block'" class="w3-button fa fa-search"></button></label></b>
+               </div>  <!-- end of autocomple engine -->
+         <div class="w3-dropdown-hover"> 
+               <h1 class="w3-small w3-border w3-button" title="links">MORE <b class="fa fa-caret-down"></b></h1>     
+           <div class="w3-dropdown-content w3-orange w3-bar-block w3-card-4">
+               <a href="#home"class="w3-bar-item w3-button fa fa-home">Home</a>	<!-- Right-sided navbar links. Hide them on small screens -->
+              <a href="#AboutUs"><button class="w3-bar-item w3-button fa fa-users"
+                onclick="document.getElementById('AboutUs').style.display='block'"> About us </button></a>
+              <a href="#menu" ><button class="w3-bar-item w3-button fa fa-shopping-cart"
+                  onclick="document.getElementById('menu').style.display='block'"> Products and Pricings</button></a>
+               <a href="#JoinUs"><button class="w3-bar-item w3-button fa fa-phone"
+                   onclick="document.getElementById('JoinUs').style.display='block'">Join Us</button></a>
+                <a href="#ContactUs"><button class="w3-bar-item w3-button fa fa-envelope-open"
+                    onclick="document.getElementById('ContactUs').style.display='block'">Contact us</button></a>
+             </div>
+                   </div>         
+              </div>
+          </div>
+      </div>
+    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="small_nav" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+        <a href="#home"class="w3-bar-item w3-button">Home</a>	<!-- Right-sided navbar links. Hide them on small screens -->
+        <a href="#about" class="w3-bar-item w3-button fa fa-users"> About us</a>
+        <a href="#menu" ><button class="w3-bar-item w3-button fa fa-shopping-cart"
+          onclick="document.getElementById('menu').style.display='block'" ></button></a>
+        <a href="#contact" class="w3-bar-item w3-button fa fa-phone"></a>
+        <a href="#contactus" class="w3-bar-item w3-button fa fa-envelope-open"></a>
+        <a href="#autocomplete"  class="w3-display-topright w3-center w3-container w3-text-white ui-widget" 
+             style="background-color:rgb(0, 0, 0);border-radius:10px 11px 11px; height:100%;">
+              <b><input class="w3-text-red" id="search"></b>
+              <b><label class="" for="tags"> <button onclick="document.getElementById('menu').style.display='block'" 
+                        class="w3-button fa fa-search"></button></label></b></a> 
+</div>
+
+<!-- Page content -->
+<div class="w3-container" style="max-width:100%;margin-top:-4px">
+  <!-- galeries show with clickable captions-->
+  <div class="nav_click w3-hover-white w3-container w3-center w3-border w3-text-red w3-large w3-blue" 
+  style="padding:2px; width:100%;padding:10%; border-radius:5px 5px 5px;">
+  <h1 class="w3-black w3-xxxlarge"><i><b>Enjoy Our Products Galeries</b></i></h1>
+</div>
+  <div class="myGaleries w3-display-container w3-center">
+      <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+          <img src="images/background.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu" ><h1><b>iPhone X</b>
+                      <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                              onclick="document.getElementById('menu').style.display='block'"></button></h1></a>     
+       </div>
+  </div>
+   <div class="myGaleries w3-display-container w3-center">
+    <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+    <img src="images/surfacebook.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu"><h1>Surface chromebook<b></b>
+                    <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                            onclick="document.getElementById('menu').style.display='block'"></button></h1></a>  
+      </div>
+  </div>
+   <div class="myGaleries w3-display-container w3-center">
+        <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+    <img src="images/toughbook.jpg" style="width:100%"></a>
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <a href="#menu" ><h1><b>Panasonic Toughbook</b>
+                <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                        onclick="document.getElementById('menu').style.display='block'"></button></h1></a> 
+    </div> 
+   </div>
+   <div class="myGaleries w3-display-container w3-center">
+    <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+        <img src="images/toughpad.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+          <a href="#menu" ><h1><b>Panasonic Toughpad</b>
+         <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                onclick="document.getElementById('menu').style.display='block'"></button></h1></a>
+        </div>
+   </div>
+   <div class="myGaleries w3-display-container w3-hide-samll w3-center">
+    <a><iframe class="w3-text-white" height="560" style="width:100%;" src="https://www.youtube.com/embed/wDvqm_u7rIg"></iframe></a>
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+        <a href="#menu" ><h1><b>Learn more about<br>Panasonic Toughpad</b>
+        <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+              onclick="document.getElementById('menu').style.display='block'"></button></h1></a>
+    </div>
+  </div>
+   <div class="myGaleries w3-display-container w3-hide-small w3-center">
+        <a><iframe class=" w3-text-white" height="560" style="width:100%;" src="https://www.youtube.com/embed/CZcSyNb1-8M"></iframe></a>
+        <div class="w3-display-bottommiddle w3-text-white w3-padding-32 w3-hide-small">
+          <a href="#menu" ><h1><b>Learn more more about the<br>chromebook worldwide</b>
+          <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                 onclick="document.getElementById('menu').style.display='block'"></button></h1></a> 
+      </div>
+  </div> 
+  <div class="myGaleries w3-display-container w3-center">
+    <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+        <img src="images/computer2.png" style="width:100%"></a>
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+         <a href="#menu" ><h1><b>MacBook Pro 13</b>
+         <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                onclick="document.getElementById('menu').style.display='block'">
+            </button></h1></a>   
+    </div>
+  </div>
+  <div class="myGaleries w3-display-container w3-center">
+    <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+        <img src="images/blackberry-keyone.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu" ><h1><b>BlackBerry KEYone</b>
+                    <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                            onclick="document.getElementById('menu').style.display='block'"></button></h1></a>  
+       </div>
+</div>
+<div class="myGaleries w3-display-container w3-center">
+    <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+        <img src="images/hp-envy.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu" ><h1><b>HP Envy Chromebook</b>
+                    <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                            onclick="document.getElementById('menu').style.display='block'"></button></h1></a>    
+    </div>
+</div>
+<div class="myGaleries w3-display-container w3-center">
+    <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+        <img src="images/allview-x4-soul-mini.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu" ><h1><b>Allview X4 Soul Mini</b>
+                    <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                            onclick="document.getElementById('menu').style.display='block'"></button></h1></a>   
+    </div>
+</div>
+<div class="myGaleries w3-display-container w3-center">
+    <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+        <img src="images/alcatel-plus-10.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu" ><h1><b>Alcatel Plus 10</b>
+                    <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                            onclick="document.getElementById('menu').style.display='block'"></button></h1></a>   
+    </div>
+</div>
+      <div class="myGaleries w3-display-container w3-center">
+          <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+          <img src="images/Intex-Aqua.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu" ><h1><b>Intex Aqua</b>
+                    <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                  onclick="document.getElementById('menu').style.display='block'"></button></h1></a>     
+        </div>
+    </div>
+    <div class="myGaleries w3-display-container w3-center">
+    <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+        <img src="images/dell.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+            <a href="#menu" ><h1><b>Dell Chromebook</b>
+              <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                      onclick="document.getElementById('menu').style.display='block'"></button></h1></a>     
+    </div>
+</div>
+<div class="myGaleries w3-display-container w3-center">
+    <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+        <img src="images/chromebook.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu" ><h1><b>Samsung Chromebook</b>
+                    <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                            onclick="document.getElementById('menu').style.display='block'"></button></h1></a>     
+    </div>
+</div>
+<div class="myGaleries w3-display-container w3-hide-small w3-center">
+        <a><iframe  height="560" style="width:100%;" src="https://www.youtube.com/embed/-XN4YDXpvms"></iframe></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu" ><h1><b>Learn more iPhone X</b>
+                    <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                            onclick="document.getElementById('menu').style.display='block'"></button></h1></a>     
+    </div>
+</div>
+<div class="myGaleries w3-display-container w3-hide-small w3-center">
+    <a><iframe height="560" style="width:100%;" src="https://www.youtube.com/embed/0MLsWQWfzqQ"></iframe></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu" ><h1><b>Learn more about Samsung</b>
+                    <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                            onclick="document.getElementById('menu').style.display='block'"></button></h1></a>  
+    </div>
+</div>
+<div class="myGaleries w3-display-container w3-center">
+    <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+        <img src="images/htc-m8.jpg" style="width:100%"></a>
+        <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+                <a href="#menu" ><h1><b>HTC one M8</b>
+                    <button  class="w3-button w3-cyan w3-display-bottomright fa fa-shopping-cart w3-hover-yellow"
+                            onclick="document.getElementById('menu').style.display='block'"></button></h1></a>     
+    </div>
+</div>
+<div class="w3-left w3-cyan w3-hover-text-yellow" onclick="plusDivs(-1)">&#10094;Preview</div>
+ <div class="w3-right w3-cyan w3-hover-text-yellow" onclick="plusDivs(1)">Next&#10095;</div>
+<div class="w3-display-centermiddle w3-center w3-black w3-hover-text-yellow" style="width:100%">
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow w3-small" onclick="currentDiv(1)">1</span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow w3-small" onclick="currentDiv(2)">2</span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow w3-small" onclick="currentDiv(3)">3</span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow w3-small" onclick="currentDiv(4)">4</span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow w3-small" onclick="currentDiv(5)">5</span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow w3-small" onclick="currentDiv(6)">6</span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow w3-small" onclick="currentDiv(7)">7</span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow w3-small" onclick="currentDiv(8)">8</span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow w3-small" onclick="currentDiv(9)">9</span>
+         <span class="w3-badge demo w3-border w3-transparent w3-hover-yellow w3-small" onclick="currentDiv(10)">...</span>
+      </div>
+       <!-- end of galleries -->
+       <div class="w3-padding-64 w3-display-container w3-center"style="padding-bottom:1000%">
+                      <a class="w3-container w3-text-white;">
+                        <h1 class="w3-orange w3-center"style="border-radius:90px 90px 90px; width:100%; ">
+                          ForeverCheaper
+                        </h1></a>
+                      <a class="w3-hover-yellow"onclick="document.getElementById('menu').style.display='block'">
+              <img src="images/background.jpg" style="width:100%"></a>
+      </div>
+  <!-- The About Section -->
+<div id="AboutUs" class="modal">
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="AboutUs">
+          <div class="w3-modal-content w3-ul w3-border w3-hoverable w3-animate-zoom w3-center"
+                style=" background-color:rgb(21, 22, 10);box-shadow: 1px 1px 5px blue;">
+                <div class="w3-container w3-white">
+                  <span onclick="document.getElementById('AboutUs').style.display='none'"
+                      class="w3-button w3-display-topright w3-large">X
+                  </span>
+                   <h1>Learn more about our products</h1>
+                        <h2 class="w3-wide">About</h2>
+                        <p class="w3-opacity"><i><b>Forever Happy to offer cheaper products</b></i></p>
+                         <p class="w3-justify">ForeverCheaper is a new market that has been serving only for the last two decades.
+                           We first onppend in 1997. We have received encourangments from everywhre around the world. The most important about us,
+                           We have been happy and enjoyed to be able to help everyone to afford something in our
+                           store. We currently have ten stores nationwide and only two worldwide. By the end of  2030, with government fundings, we hope to open 20 more stores nationally and internationally. We strive
+                           to make our customers our first priorities. Thanks again for staying with us.</p>
+                      
+                    <main>
+                        <h2 >Learn more about<br> our iphones</h2>
+                         <img class="w3-half" src="images/iphones.PNG">
+                        <p> If you walk in our stores, you will see all kinds of iphones.<br>Our products are produced
+                             by the best manufacturers worldwide</p>	
+                    </main>
+                    <aside> 
+                        <h1 class="w3-modal-content" id="products"></h1>
+                        <nav id="nav_list">
+                            <ul> 
+                              <li><a href="#" title="alcatel">Select<br>Alcatel</a></li>
+                              <li><a href="#" title="alcatelPlus">Select<br>Alcatel</a></li>
+                              <li><a href="#" title="chromebook">Select<br>Acer Chromebook</a></li>
+                              <li><a href="#" title="predator">Select<br>Acer Predator 8</a></li>
+                              <li><a href="#" title="allview">Select<br>X4 Soul Mini</a></li>
+                              <li><a href="#" title="amazon">Select<br>Amazon</a></li>  
+                              <li><a href="#" title="apple">Select<br>Iphone8</a></li>
+                              <li><a href="#" title="blackBerry">Select<br>BlackBerry</a></li>
+                              <li><a href="#" title="hp">Select<br>HP Elite</a></li>
+                              <li><a href="#" title="hpenvy">Select<br>HP Envy</a></li>
+                              <li><a href="#" title="intex">Select<br>Intex aqua</a></li>	
+                              <li><a href="#" title="lg">Select<br>LG</a></li>
+                              <li><a href="#" title="mwg">Select<br>Motorola</a></li>
+                              <li><a href="#" title="nokia">Select<br>Nokia edge</a></li>
+                              <li><a href="#" title="panasonic0">Select<br>Panasonic touhgbook</a></li>
+                              <li><a href="#" title="panasonic1">Select<br>Panasonic touhgpad</a></li>
+                              <li><a href="#" title="panasonic2">Select<br>Panasonic Eluga</a></li>
+                              <li><a href="#" title="samsung">Select<br>Samsung galaxy J5 edge</a></li> 
+                              <li><a href="#" title="sony">Select<br>Sony Xperia</a></li>
+                              <li><a href="#" title="vivo">Select<br>Vivo XPlay</a></li>
+                          </ul>
+                      </nav>
+                  </aside>
+                            <p class="w3-small w3-center">&#169; 2017 Janvier Zagabe All Rights Reserved | Designed by 
+                                <a href="https://github.com/" target="_blank">github</a></p>
+               </div>
+          </div>
+      </div>
+</div>
+<!-- end of About us -->
+<!--Join us-->
+<div id="JoinUs" class="modal">
+    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="JoinUs">
+            <div class="w3-modal-content w3-animate-zoom w3-black w3-border w3-text-red">
+                <div class="w3-content w3-black">
+                    <span onclick="document.getElementById('JoinUs').style.display='none'"
+                          class="w3-button w3-display-topright w3-large">X</span>
+                      <b><i><h1>Join us</h1></i></b>
+                </div>
+                  <div class="w3-content">
+                      <h1>Become a member today</h1>
+                    <main class="w3-small w3-display-content w3-black w3-text-white">
+                          <h1 class="w3-orange w3-text-white">Don't wait to become a member</h1>
+                         <form action="https://formspree.io/bwemerezagabe@icloud.com"name="member_form" id="member_form" method="POST">
+                            <fieldset class="w3-display-toprmiddle">
+                                  <legend class="w3-red w3-border">Registration Information</legend>
+                                    <label for="email">Email Address:</label><br>
+                                    <input type="text" name="email" id="email" autofocus><br>
+                                    <label for="password">Password:</label><br>
+                                    <input type="password" name="password" id="password"placeholder="At least 6 letters or numbers" ><br>
+                                    <label for="verify">Verify Password:</label><br>
+                                    <input type="password" name="verify" id="verify"><br>
+                             </fieldset>
+                             <fieldset>
+                                  <legend class="w3-red w3-border">Member Information</legend>
+                                      <label for="first_name">First Name:</label><br>
+                                      <input type="text" name="first_name" id="first_name"><br>
+                                      <label for="last_name">Last Name:</label><br>
+                                      <input type="text" name="last_name" id="last_name"><br>
+                                      <label for="state">State:</label><br>
+                                      <input type="text" name="state" id="state" placeholder="2-character code"><br>
+                                      <label for="zip">ZIP Code:</label><br>
+                                      <input type="text" name="zip" id="zip" placeholder="99999 or 99999-9999"><br>
+                                      <label for="phone">Phone Number:</label><br>
+                                      <input type="text" name="phone" id="phone" placeholder="999-999-9999"><br>
+                              </fieldset>
+                              <fieldset class="w3-orange" id="buttons">
+                                  <legend class="w3-red w3-border">Get your<br>Membership today</legend>
+                                      <label>&nbsp;</label>
+                                      <input class="w3-hover-black" type="submit" id="submit" value="Submit">
+                                      <input  class="w3-hover-black" type="reset" id="reset" value="Reset"><br>
+                              </fieldset>
+                         </form>   <!-- end of forms -->
+                    </main>
+                      <p class="w3-small w3-center">
+                         &#169; 2017 Janvier Zagabe All Rights Reserved | Designed by 
+                        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a>
+                      </p>
+                </div>
+            </div> 
+    </div>
+</div>
+<!-- end of join us -->     
+<!-- sidebar  will be closed in small screen-->
+<div class="navigation w3-container w3-content w3-hide-small w3-padding w3-center">
+        <div  style="padding-top:95px;border-radius:11px 11px 11px" class="w3-border w3-small w3-display-topright">
+          <a href="#menu" ><h1><button onclick="document.getElementById('menu').style.display='block'" 
+            class="w3-button w3-orange fa fa-shopping-cart w3-xxxlarge w3-transparent"></button></h1></a>
+          <p><button onclick="document.getElementById('contactUs').style.display='block'" 
+              class="w3-button w3-orange">Contact</button></p>
+          <p><button onclick="document.getElementById('JoinUs').style.display='block'" 
+              class="w3-button w3-orange">Join us</button></p>
+          <p><button onclick="document.getElementById('AboutUs').style.display='block'" 
+              class="w3-button w3-orange">About us</button></p>
+        </div>
+    </div>
+<!-- end of the sidebar -->
+<!-- Modal for the menu's PRODUCTS Section -->
+<div id="menu" class="modal">
+      <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="AboutUs">
+            <div class="w3-modal-content w3-ul w3-border w3-hoverable w3-animate-zoom w3-center"
+                                    style=" background-color:rgb(21, 22, 10);box-shadow: 15px 15px 55px orange;">
+                  <div class="w3-container w3-black">
+                          <span onclick="document.getElementById('menu').style.display='none'"
+                                class="w3-black w3-display-topright w3-hover-red">x</span>
+                                <b><h1 class="w3-orange"style="border-radius:25px 10px 10px">Our special Pricings</h1> </b> 
+                            <!-- <form id="order_form" name="order_form" action="checkout.html" method="get" -->
+                        <form name="order_form" action="checkout.html" method="get" action="https://formspree.io/bwemerezagabe@icloud.com" id="member_form" method="POST">
+                              <section  class="w3-half w3-black" id="home" style=" box-shadow: 11px 20px 110px white;border-radius:25px 25px 25px">
+                                          <h1><b><i>Please, select a product to add in cart.</i></b></h1>
+                                      <div class="w3-border"style="border-radius:25px 10px 10px">
+                                        <table>
+                                          <tr>
+                                            <td><a id="iphone" href="#"><img id="images/iPhone8-foreverCheaper1.jpg"src="images/iPhone8-foreverCheaper.jpg" alt="iphone8"/></a></td> 
+                                            <td><a href="#"><img id="images/acerPC-foreverCheaper1.jpg" src="images/acerPC-foreverCheaper.jpg" alt="acerPC"/></a></td>
+                                          </tr>
+                                        </table>
+                                      </div> 
+                                      <div class="w3-border"style="border-radius:25px 10px 10px">
+                                        <table>
+                                          <tr>
+                                            <td><a href="#"><img id="images/alcatelPlus-foreverCheaper1.jpg" src="images/alcatelPlus-foreverCheaper.jpg" alt="alcatel"/></a></td>
+                                            <td><a href="#"><img id="images/alcatel-foreverCheaper1.jpg" src="images/alcatel-foreverCheaper.jpg" alt="alcatel1"/></a></td>
+                                          </tr>
+                                      </table>
+                                      </div>
+                                      <div class="w3-border" style="border-radius:25px 10px 10px">
+                                       <table>
+                                        <tr>
+                                          <td><a href="#"><img id="images/HTCone-foreverCheaper.jpg" src="images/HTCone-foreverCheaper1.jpg" alt="htc"/></a></td>
+                                          <td> <a href="#"><img id="images/HP-MobileforeverCheaper1.jpg" src="images/HP-MobileforeverCheaper.jpg" alt="hp"/></a></td>
+                                        </tr>
+                                       </table>
+                                      </div>
+                                      <div class="w3-border"style="border-radius:25px 10px 10px">
+                                        <table>
+                                          <tr>
+                                            <td><a class="" href="#"><img id="images/motorola-foreverCheaper.jpg" src="images/motorola-foreverCheaper1.jpg" alt="motorola"/></a></td>
+                                            <td><a  href="#"><img id="images/LG-foreverCheaper.jpg" src="images/LG-foreverCheaper1.jpg" alt="lg"/></a></td>
+                                          </tr>
+                                          </table>
+                                       </div>
+                                       <div class="w3-border"style="border-radius:25px 10px 10px">
+                                        <table>
+                                          <tr>
+                                            <td><a  href="#"><img id="images/Amazon-foreverCheaper1.jpg"src="images/Amazon-foreverCheaper.jpg" alt="amazon"/></a></td>
+                                            <td><a href="#"><img id="images/panasonic-foreverCheaper1.jpg" src="images/panasonic-foreverCheaper.jpg" alt="eluga"/></a></td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                      <div class="w3-border"style="border-radius:25px 10px 10px">
+                                        <table> 
+                                          <tr>
+                                            <td><a href="#"><img id="images/blackberyy-foreverCheaper.jpg" src="images/blackberyy-foreverCheaper1.jpg" alt="blackberry"/></a></td>
+                                            <td><a href="#"><img id="images/hplaptop-foreverCheaper1.jpg" src="images/hplaptop-foreverCheaper.jpg" alt="hp1"/></a></td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                      <div class="w3-border"style="border-radius:25px 10px 10px">
+                                        <table>
+                                          <tr>
+                                            <td><a class="" href="#"><img id="images/intexblack-and-white-foreverCheaper.jpg" src="images/intexblack-and-white-foreverCheaper1.jpg" alt="intex"/></a></td>
+                                            <td> <a class="" href="#"><img id="images/panasoniclaptop-foreverCheaper.jpg" src="images/panasoniclaptop1-foreverCheaper.jpg" alt="toughbook"/></a></td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                      <div class="w3-border"style="border-radius:25px 10px 10px">
+                                        <table>
+                                          <tr>
+                                            <td><a href="#"><img id="images/vivoXplay-foreverCheaper.png"src="images/vivoXplay-foreverCheaper1.png" alt="xplay"/></a></td>
+                                            <td><a href="#"><img id="images/samsungGalaxyedge-foreverCheaper1.jpg"src="images/samsungGalaxyedge-foreverCheaper.jpg" alt="samsung"/></a></td>
+                                         </tr>
+                                      </table>
+                                      </div>
+                                      <div class="w3-border" style="border-radius:25px 10px 10px">
+                                      <table>
+                                        <tr>
+                                          <td><a href="#"><img id="images/sonyXperia-foreverCheaper.jpg"src="images/sonyXperia-foreverCheaper1.png" alt="xperia"/></a></td>
+                                          <td> <a href="#"><img id="images/Allview-foreverCheaper1.jpg" src="images/Allview-foreverCheaper.jpg" alt="allview"/></a></td>
+                                          </tr>
+                                      </table>
+                                      </div>
+                                      <div class="w3-border"style="border-radius:25px 10px 10px">
+                                        <table>
+                                          <tr>
+                                            <td><a href="#"><img id="images/panasonic-toughpad-foreverCheaper1.png"src="images/panasonic-toughpad-foreverCheaper.jpg" alt="toughpad"/></a></td>
+                                            <td><a href="#"><img id="images/nokiaedge-foreverCheaper1.jpg" src="images/nokiaedge-foreverCheaper.jpg" alt="nokia"/></a></td>
+                                          </tr>
+                                        </table>
+                                      </div>
+                                      <div class="w3-border"style="border-radius:25px 10px 10px">
+                                        <table>
+                                          <tr>
+                                            <td><a href="#"><img id="images/acer-foreverCheaper1.jpg" src="images/acer-foreverCheaper.jpg" alt="acer1"/></a></td>
+                                          </tr>
+                                      </table>
+                                      </div>
+                              </section>
+                                    <!-- input and total table -->
+                                <section class="w3-half w3">
+                                        <h1><b><i class="fa fa-shopping-cart"></i></b></h1>
+                                    <section>
+                                          <div class="w3-border" style="border-radius:25px 10px 10px">
+                                          <table>
+                                            <tr>
+                                              <td>
+                                                <select id="order" name="order" size="20"></select></td>
+                                              <td>
+                                                <!-- the shopping cart in total box -->
+                                                <p class="w3-orange w3-large fa fa-shopping-cart" id="total">&nbsp;</p><i><b></b></i></td>
+                                            </tr>
+                                          </table>  
+                                        </div>     		
+                                    </section>
+                                    <section id="buttons">
+                                      <div class="w3-border"style="border-radius:25px 10px 10px">
+                                        <table>
+                                          <tr>
+                                            <td ><input  type="button" name="place_order" id="place_order" value="Place Order"></td>
+                                            <td><input type="button" name="clear_order" id="clear_order" value="Clear Order"></td>
+                                          </tr>
+                                        </table>	
+                                      </div>		            		
+                                    </section>
+                              </section>   
+                        </form>
+                 </div>
+           </div>
+     </div>
+</div>
+<!-- end of memu --> 
+<!-- Contact Modal -->
+<div id="ContactUs" class="modal" >
+        <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px">
+              <div class="w3-modal-content w3-animate-zoom w3-black w3-border w3-text-red">
+                  <div class="w3-content w3-black"style="background-color:black;box-shadow: 11px 20px 110px rgb(241, 241, 241);border-radius:25px 10px 10px">
+                      <div class="w3-content w3-text-red" >
+                          <span onclick="document.getElementById('ContactUs').style.display='none'"
+                                class="w3-display-topright w3-large w3-white">X
+                          </span>
+                          <h1 class=""w3-white style="background-color:black;box-shadow: 11px 20px 110px rgb(241, 241, 241);
+                              border-radius:25px 10px 10px">Make an appointment today
+                           </h1>
+                       </div>
+                        <div class="w3-container w3-black w3-text-red">
+                                  <p>Ask for today's schedule or just send us a message:</p>
+                                      <!-- <form action="/action_page.php" target="_blank"> -->
+                              <form id="order_form" name="order_form" action="checkout.html" method="get"
+                                      action="https://formspree.io/bwemerezagabe@icloud.com"
+                                      name="member_form" id="member_form" method="POST">
+                                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+                                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="How many people" required name="People"></p>
+                                    <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2017-11-16T20:00"></p>
+                                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message \ urgent" required name="Message"></p>
+                                    <p><button class="w3-button" type="submit">SEND</button></p>
+                                    <p class="w3-small w3-center">&#169; 2017 Janvier Zagabe All Rights Reserved | Designed by 
+                                    <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+                              </form>
+                        </div>
+                   </div>
+             </div>
+       </div>
+
+</div>
+</div>
+<!-- End Page Content -->
+<!-- Footer -->
+<footer class="w3-hide-small">
+        <div class="social">
+                <a href="https://facebook.com/" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+                <a href="https://twitter.com/" class="link twitter" target="_parent"><span class="fa fa-twitter-square"></span></a>
+                <a href="https://github.com/" class="link github" target="_parent"><span class="fa fa-github-square"></span></a>
+                <a href="https://plus.google.com/" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
+                <a href="https://linkedin.com/" class="link linkedin" target="_parent"><span class="fa fa-linkedin-square"></span></a>        
+                <a href="https://youtube.com/" class="link youtube" target="_parent"><span class="fa fa-youtube-square"></span></a>  
+        </div> 
+</footer>
+<!-- end of footer -->
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("myGaleries");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("small_nav");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!-- slider galeries show -->
+<script>
+        showDivs(slideDonut);
+              function plusDivs(n)
+               {
+              showDivs(slideDonut += n);
+                }
+              function currentDiv(n)
+               {
+                showDivs(slideDonut = n);
+                }
+             function showDivs(n)
+               {
+              var i;
+              var x = document.getElementsByClassName("myGaleries");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideDonut = 1}    
+              if (n < 1) {slideDonut = x.length}
+        for
+          (i = 0; i < x.length; i++){
+             x[i].style.display = "none";  
+            }
+        for 
+          (i = 0; i < dots.length; i++){
+               dots[i].className = dots[i].className.replace("w3-red");
+              }
+            x[slideDonut-1].style.display = "block";  
+            dots[slideDonut-1].className += "w3-orange";
+            }
+</script>  
+<script>
+  // When the user clicks anywhere outside of the modal, he close it
+  var close_menu = document.getElementById('menu');
+  var close_aboutus = document.getElementById('AboutUs');
+  var close_contactus = document.getElementById('ContactUs');
+  var close_joinus = document.getElementById('JoinUs');
+  window.onclick = function(event) {
+      if (event.target == close_menu) {
+         close_menu.style.display = "none";
+      }
+      if (event.target == close_aboutus) {
+          close_aboutus.style.display = "none";
+      }
+      if (event.target == close_contactus) {
+          close_contactus.style.display = "none";
+      }
+      if (event.target == close_joinus) {
+          close_joinus.style.display = "none";
+      }
+  }
+</script>
+<!-- clicking anywhere on the web will close the animated social
+    icons -->
+<script> 
+      $( document.body ).click(function() {
+        if ( $( "bars_items" ).is( ":hidden" ) ) {
+            $( "bar_items" ).show("slow");
+        } else
+        {
+          $( ".social").slideToggle();
+        }
+        });
+// //once the banner will be clicked, all galeriies will be seen
+//         $(".nav_click").click(function() {
+//         $(".myGaleries").slideToggle("slow");
+//         ("img" ).show("slow");
+//       });
+</script>
+</body>
+</html>
+>>>>>>> f4cefe38fb0e2f18e71a9a687daf4a5050d682dd
