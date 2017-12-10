@@ -16,13 +16,6 @@
 		<div class="w3-bar w3-orange w3-card-4" style="letter-spacing:2px;">
 				<a href="#home"
 				class="w3-bar-item w3-button">Home</a>	<!-- Right-sided navbar links. Hide them on small screens -->
-			  <div class="w3-right w3-hide-medium">
-				<a href="#menu" >
-			<button class="w3-bar-item w3-button fa fa-shopping-cart"
-			onclick="document.getElementById('menu').style.display='block'" ></button></a>
-				<a href="#contact" class="w3-bar-item w3-button fa fa-phone"></a>
-		  <a href="#contactus" class="w3-bar-item w3-button fa fa-envelope-open"></a> 
-	  </div>
   </div>
 <main class="w3-small w3-display-content w3-black w3-text-white">
 	<h1 class="w3-orange w3-text-white">Don't wait to become a member</h1>
@@ -50,42 +43,6 @@
 			<input type="text" name="zip" id="zip" placeholder="99999 or 99999-9999"><br>
 			<label for="phone">Phone Number:</label><br>
 			<input type="text" name="phone" id="phone" placeholder="999-999-9999"><br>
-		</fieldset>
-		<fieldset>
-			<legend class="w3-red w3-border">Payment Information</legend>
-			<label for="start_date">Requested Start Date:</label><br>
-			<input type="text" name="start_date" id="start_date" placeholder="99/99/9999"><br>
-			<label for="cc_type">Credit Card Type:</label><br>
-			<select name="cc_type" id="cc_type">
-			    <option value="v">Visa</option>
-			    <option value="m">Master Card</option>            
-			    <option value="x">American Express</option>
-			</select><br>
-			<label for="card_number">Credit Card Number:</label><br>
-			<input type="text" name="card_number" id="card_number"><br>
-			<label for="expiry_date">Expiration Date:</label>
-			<select name="expiry_month" id="expiry_month">
-				<option value="01">01</option>
-				<option value="02">02</option>
-				<option value="03">03</option>				
-				<option value="04">04</option>
-				<option value="05">05</option>
-				<option value="06">06</option>
-				<option value="07">07</option>
-				<option value="08">08</option>
-				<option value="09">09</option>
-				<option value="10">10</option>
-				<option value="11">11</option>
-				<option value="12">12</option>
-			</select>
-			<select name="expiry_year" id="expiry_year">
-				<option value="2015">2015</option>
-				<option value="2016">2016</option>
-				<option value="2017">2017</option>				
-				<option value="2018">2018</option>
-				<option value="2019">2019</option>
-				<option value="2020">2020</option>
-			</select><br>			
 		</fieldset>
 		<fieldset class="w3-orange" id="buttons">
 			<legend class="w3-red w3-border">Get your<br>Membership today</legend>

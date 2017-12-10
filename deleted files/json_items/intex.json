@@ -1,0 +1,10 @@
+
+{"phones":[
+	{	"name": "Intex Aqua",
+	 	"year": 2017,
+	 	"price": 345.90,
+		"brand": "Intex",
+		"image": "images/Intex-Aqua.jpg",
+		"features": "New"
+	}
+]}

@@ -1,0 +1,10 @@
+
+{"phones":[
+	{	"name": "Samsung Galaxy J5 edge",
+	 	"year": 2017,
+	 	"price": 249.99,
+		"brand": "Samsung",
+		"image": "images/samsung-galaxy.jpg",
+		"features": "At a glance: 5 inch Display, 1280 x 720 p resolution, Android Lollipop OSe."		
+	}
+]}

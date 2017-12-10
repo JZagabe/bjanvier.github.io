@@ -21,6 +21,9 @@
   padding: .5em 0 .5em 1em;
 }
 body {
+  box-shadow: 20px 20px 5px blue;
+}
+#title, html, body, #autocomplete {
   background: -webkit-linear-gradient(rgb(10, 1, 1), 
   rgb(0, 0, 0), rgb(190, 191, 202), 
   rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 

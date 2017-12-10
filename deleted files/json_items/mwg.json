@@ -1,0 +1,10 @@
+
+{"phones":[
+	{	"name": "Moto G Plus",
+	 	"year": 2017,
+	 	"price": 224.99,
+		"brand": "Motorola",
+		"image": "images/Nokia-Edge.jpg",
+		"features": ""
+	}
+]}
