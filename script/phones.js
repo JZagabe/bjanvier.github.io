@@ -1,8 +1,8 @@
 $(document).ready(function() {
-	$("#nav_list a").click(
+$("#nav_list a").click(
 		function() {
-			var fileName = "json_items/" + $(this).attr("title") + ".json"; //taking items from the json's folder
-			$.getJSON(fileName, function(data) {
+			var phones = "https://bjanvier.github.io/api/";
+			$.getJSON(phones, function(data) {
 				$.each(data, function() {
 					$.each(this, function(key, value) {
 						$("table").text("");
