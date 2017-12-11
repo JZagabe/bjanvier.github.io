@@ -25,10 +25,11 @@
   padding: 43px;
   color: rgb(41, 16, 16);
 }
+
 #title {
   font-family: 'Galada';font-size: 32px;
 }
-body, .drop_down, #try, #title, #nav_click, #main_title i b, #AboutUs, #ContactUs, #menu,#content, #JoinUs {
+body, .drop_down, #try, #title, #nav_click, #main_title i b, #AboutUs, #ContactUs, #menu,#content, #JoinUs,#myTitle {
   background: -webkit-linear-gradient(rgb(10, 1, 1), 
   rgb(0, 0, 0), rgb(190, 191, 202), 
   rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 
@@ -46,13 +47,29 @@ body, .drop_down, #try, #title, #nav_click, #main_title i b, #AboutUs, #ContactU
 
 }
 
+
 .social {
   position: absolute;
   width: 1%;
   bottom: 53%;
   transform: translateY(59%);
-}
 
+}
+  .social .link {
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 49px;
+  height: 60px;
+  border-radius: 80%;
+  border:1px dashed blue;
+  background-clip: content-box;
+  padding: 5px;
+  transition: .6s;
+  margin-left: -22px;
+  font-size: 16px;
+  }
+@media screen and (min-width: 800px) {
 .social .link {
   display: inline-block;
   vertical-align: middle;
@@ -67,19 +84,50 @@ body, .drop_down, #try, #title, #nav_click, #main_title i b, #AboutUs, #ContactU
   margin-left: 5px;
   font-size: 53px;
 }
- #main_title {
-  display: inline-block;
+}
+#search {
+ width: 126px;
+ }
+ @media screen and (min-width: 500px) {
+  #search {
+   width: 180px;
+  }
+  }
+  .search {
+    width: 122px;
+    margin-left: 19px;
+    padding-top: 1px;
+    }
+  @media screen and (min-width: 500px) {
+   .search {
+      width: 280px;
+      padding-top: 1px;
+     }
+     }
+ #main_title{
+  width: -1px;
+  border-radius: 50%;
+  border: 1px dashed blue;
+  padding-right: 350px;
+  margin-left: -65px;
+}
+@media screen and (min-width: 500px) {
+  #main_title {
+   display: inline-block;
   vertical-align: middle;
   position: relative;
-  width: 300px;
+  width: 3px;
   height: 90px;
   border-radius: 100%;
   border: 1px dashed blue;
   background-clip: content-box;
   padding-right: 350px;
   margin-left: 5px;
-  font-size: 3px;
-}
+  font-size: 3px;  
+  }
+  }
+  
+  
 
 .social .link span {
   display: inline-block;
@@ -122,8 +170,6 @@ body, .drop_down, #try, #title, #nav_click, #main_title i b, #AboutUs, #ContactU
     background-color: rgb(179, 7, 7);
     color: white;
   }
-
-
 
   main {
     clear: center;

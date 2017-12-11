@@ -92,7 +92,7 @@
             background-color: whitesmoke;
             } 
 </style>
-       <script>
+                 <script>
                          $(document).ready(function() {
                         $("#Mymenu").accordion(
                         { 
@@ -109,7 +109,7 @@
           <div id="bar_items" class="w3-top w3-display-topmiddle">  <!-- Navbar (sit on top) -->	
              <div id="toolbar" class="w3-bar w3-orange w3-card-4" style="letter-spacing:2px;">
                   <!-- autocomple engine -->
-              <div class="w3-display-topright w3-hide-small w3-right w3-container w3-text-white 
+              <div class="search w3-display-topright w3-right w3-container w3-text-white 
               ui-widget w3-black w3-medium" style="border-radius:10px 11px 11px;">
                    <b><input placeholder="write something here" class="w3-medium w3-white" id="search"></b>
                    <b><label for="tags"> 
@@ -141,7 +141,7 @@
         <a href="#menu" ><button class="w3-bar-item w3-button fa fa-shopping-cart"
           onclick="document.getElementById('menu').style.display='block'" ></button></a>
         <a href="#contact" class="w3-bar-item w3-button fa fa-phone"></a>
-        <a href="#contactus" class="w3-bar-item w3-button fa fa-envelope-open"></a>
+        <a href="#ContactUs" class="w3-bar-item w3-button fa fa-envelope-open"></a>
         <a href="#autocomplete"  class="w3-display-topright w3-center w3-container w3-text-white ui-widget" 
              style="background-color:rgb(0, 0, 0);border-radius:10px 11px 11px; height:100%;">
               <b><input class="w3-text-red" id="search"></b>
@@ -152,10 +152,10 @@
 <!-- Page content -->
 <div id="content" class="w3-container w3-border" style="max-width:100%;margin-top:-1px">
   <!-- title -->
-<div class="w3-display-container w3-center" >
-        <h1  id="myTitle" class="w3-xxxlarge fa fa-shopping-cart"style="padding-top:15%">
+<div id="myTitle" class="w3-display-container w3-center" >
+        <h1   class="w3-xxxlarge fa fa-shopping-cart"style="padding-top:15%">
           <h1 id="main_title">
-            <b class="w3-text-orange">ForeverCheaper</b>
+            <b id="ForeverCheaper"class="w3-text-orange">ForeverCheaper</b>
           </h1><img  src="images/background.jpg" style="width:100%">
         </h1>
 </div>
@@ -407,11 +407,11 @@
 </div>
 <!-- end of join us -->     
 <!-- sidebar  will be closed in small screen-->
-<div class="navigation w3-container w3-content w3-hide-small w3-padding w3-center">
+<div class="navigation w3-container w3-content w3-padding w3-center">
         <div  style="padding-top:58px;border-radius:11px 11px 11px" class="w3-orange w3-small w3-display-topright">
           <a href="#menu" ><h1><button onclick="document.getElementById('menu').style.display='block'" 
             class="w3-button fa fa-shopping-cart w3-xxxlarge w3-transparent"></button></h1></a>
-          <p><button onclick="document.getElementById('contactUs').style.display='block'" 
+          <p><button onclick="document.getElementById('ContactUs').style.display='block'" 
               class="w3-button">Contact</button></p>
           <p><button onclick="document.getElementById('JoinUs').style.display='block'" 
               class="w3-button">Join us</button></p>
@@ -594,9 +594,9 @@
 </div>
 <!-- End Page Content -->
 <!-- Footer -->
-<footer class="w3-hide-small">
+<footer class="">
         <div class="social">
-                <a href="https://facebook.com/" class="link facebook" target="_parent"><span class="fa fa-facebook-square"></span></a>
+                <a href="https://facebook.com/" class="link facebook" target="_parent"><span class="fa fa-facebook-square" style="width:100%"></span></a>
                 <a href="https://twitter.com/" class="link twitter" target="_parent"><span class="fa fa-twitter-square"></span></a>
                 <a href="https://github.com/" class="link github" target="_parent"><span class="fa fa-github-square"></span></a>
                 <a href="https://plus.google.com/" class="link google-plus" target="_parent"><span class="fa fa-google-plus-square"></span></a>
@@ -606,7 +606,7 @@
 </footer>
 <!-- end of footer -->
 <script>
-// Automatic Slideshow - change image every 4 seconds
+// Automatic Slideshow - change image every 2500 seconds
 var myIndex = 0;
 carousel();
 function carousel() {
@@ -618,7 +618,7 @@ function carousel() {
     myIndex++;
     if (myIndex > x.length) {myIndex = 1}    
     x[myIndex-1].style.display = "block";  
-    setTimeout(carousel, 3000);    
+    setTimeout(carousel, 2500);    
 }
 
 // Used to toggle the menu on small screens when clicking on the menu button
@@ -698,9 +698,8 @@ a. When the user clicks anywhere outside of the modal, close it
             $( "bar_items" ).show("slow");
         } else
         {
-          $( ".social").slideToggle();
+          $( ".navigation").slideToggle();
           $("#autocomplete").sliddeToggle();
-
         }
         });
 // //once the banner will be clicked, all galeriies will be seen
