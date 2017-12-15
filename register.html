@@ -1,63 +1,231 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Account Registration</title>
-	<link href="css/main.css" rel="stylesheet" type="text/css"/>
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<style>
-    	body {
-		    font-family: Arial, Helvetica, sans-serif;
-		    background-color: white;
-		    margin: 0 auto;
-		    width: 700px;
-		    padding: 20px;
-		    border: 3px solid blue;
-		}
-	</style>
-	<script>
-	//<![CDATA[
-	var decode = function ( text ) {
-	    text = text.replace(/\+/g, " ");
-	    text = text.replace(/%[a-fA-F0-9]{2}/g, 
-	        function ( text ) {
-	            return String.fromCharCode( "0x" + text.substr(1,2));
-	        }
-	    );
-	    return text;
-	}
-	    
-	var display_data = function () {
-	    var url_parts = window.location.toString().split("?");
-	    if ( url_parts.length != 2 ) return;
-	    
-	    var fields = url_parts[1].split("&");
-	    
-	    if ( fields.length == 0 ) {
-	        document.write("<p>No data was submitted.</p>");
-	    } else {
-	        document.write("<dl>");
-	        var field_parts;
-	        for ( var i in fields ) {
-	            field_parts = fields[i].split("=");
-	            field_parts[0] = decode( field_parts[0] );
-	            field_parts[1] = decode( field_parts[1] );
-	            document.write("<dt>" + field_parts[0] + "</dt>");
-	            document.write("<dd>" + field_parts[1] + "</dd>");
-	        }
-	        document.write("</dl>");
-	    }
-	}
-	//]]>
-	</script>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <title>Membership Signup</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">     
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="script/jquery.validate.min.js"></script>
+    <script src="script/additional-methods.min.js"></script>
+    <script src="script/member.js"></script>
 </head>
-
-<body class="w3-text-white w3-content w3-border">
-	<section class="w3-border" id="content">
-	    <h1 class="w3-orange">Register for an Account</h1>
-	    <p class="w3-red">Your account registration has been submitted with the following
-	    information:</p>
-	    <script type="text/javascript">display_data();</script>
-	</section>
+<body style="background-color:rgb(27, 27, 31)"; width:"100%">
+    <div class="w3-container">
+        <div class="w3-content" 
+        style="width:100%; height:100%; background-color:rgb(11, 12, 12); color:rgb(239, 239, 243)">
+         <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <h1 class="w3-yellow">Thank you for buying here!</h1>
+            <p>Please makke a Payment:</p>   
+            <br>
+        </form>
+        <form action="register.html" method="get" name="member_form" id="member_form">
+            <fieldset>
+                <legend>Payment Information</legend>
+                      <label for="start_date">Requested Start Date:</label>
+                          <input type="text" name="start_date" id="start_date" placeholder="99/99/9999"><br>
+                      <label for="cc_type">Credit Card Type:</label>
+                              <select name="cc_type" id="cc_type">
+                                  <option value="v">Visa</option>
+                                  <option value="m">Master Card</option>            
+                                  <option value="x">American Express</option>
+                              </select><br>
+                      <label for="card_number">Credit Card Number:</label>
+                          <input type="text" name="card_number" id="card_number"><br>
+                      <label for="expiry_date">Expiration Date:</label>
+                              <select name="expiry_month" id="expiry_month">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>				
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select name="expiry_year" id="expiry_year">
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>				
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2018">2021</option>
+                                <option value="2019">2022</option>
+                                <option value="2020">2023</option>
+                            </select><br>			
+                    </fieldset>
+                    <fieldset id="buttons">
+                      <legend>Submit Your Membership</legend>
+                        <label>&nbsp;</label>
+                          <input class="w3-yellow w3-hover-white" type="submit" id="submit" value="Submit">
+                          <input class="w3-yellow w3-hover-white" type="reset" id="reset" value="Reset"><br>
+                  </fieldset>
+                  <div class="w3-third w3-row">
+                    <a class="w3-orange" href="validation.html">Becoome a member today to qualify for more benefits</a>
+                    <a class="w3-red" href="index.html">exit</a>
+                  </div>
+              </form>
+    </main>
+  </div>
+</div> 
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <title>Membership Signup</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">     
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="script/jquery.validate.min.js"></script>
+    <script src="script/additional-methods.min.js"></script>
+    <script src="script/member.js"></script>
+</head>
+<body style="background-color:rgb(27, 27, 31)"; width:"100%">
+    <div class="w3-container">
+        <div class="w3-content" 
+        style="width:100%; height:100%; background-color:rgb(11, 12, 12); color:rgb(239, 239, 243)">
+         <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <h1 class="w3-yellow">Thank you for buying here!</h1>
+            <p>Please makke a Payment:</p>   
+            <br>
+        </form>
+        <form action="register.html" method="get" name="member_form" id="member_form">
+            <fieldset>
+                <legend>Payment Information</legend>
+                      <label for="start_date">Requested Start Date:</label>
+                          <input type="text" name="start_date" id="start_date" placeholder="99/99/9999"><br>
+                      <label for="cc_type">Credit Card Type:</label>
+                              <select name="cc_type" id="cc_type">
+                                  <option value="v">Visa</option>
+                                  <option value="m">Master Card</option>            
+                                  <option value="x">American Express</option>
+                              </select><br>
+                      <label for="card_number">Credit Card Number:</label>
+                          <input type="text" name="card_number" id="card_number"><br>
+                      <label for="expiry_date">Expiration Date:</label>
+                              <select name="expiry_month" id="expiry_month">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>				
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select name="expiry_year" id="expiry_year">
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>				
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2018">2021</option>
+                                <option value="2019">2022</option>
+                                <option value="2020">2023</option>
+                            </select><br>			
+                    </fieldset>
+                    <fieldset id="buttons">
+                      <legend>Submit Your Membership</legend>
+                        <label>&nbsp;</label>
+                          <input class="w3-yellow w3-hover-white" type="submit" id="submit" value="Submit">
+                          <input class="w3-yellow w3-hover-white" type="reset" id="reset" value="Reset"><br>
+                  </fieldset>
+                  <div class="w3-third w3-row">
+                    <a class="w3-orange" href="validation.html">Becoome a member today to qualify for more benefits</a>
+                    <a class="w3-red" href="index.html">exit</a>
+                  </div>
+              </form>
+    </main>
+  </div>
+</div> 
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta charset="UTF-8">
+    <title>Membership Signup</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">     
+    <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="script/jquery.validate.min.js"></script>
+    <script src="script/additional-methods.min.js"></script>
+    <script src="script/member.js"></script>
+</head>
+<body style="background-color:rgb(27, 27, 31)"; width:"100%">
+    <div class="w3-container">
+        <div class="w3-content" 
+        style="width:100%; height:100%; background-color:rgb(11, 12, 12); color:rgb(239, 239, 243)">
+         <main>
+        <form id="order_form" name="order_form" action="checkout.html" method="get">
+            <h1 class="w3-yellow">Thank you for buying here!</h1>
+            <p>Please makke a Payment:</p>   
+            <br>
+        </form>
+        <form action="register.html" method="get" name="member_form" id="member_form">
+            <fieldset>
+                <legend>Payment Information</legend>
+                      <label for="start_date">Requested Start Date:</label>
+                          <input type="text" name="start_date" id="start_date" placeholder="99/99/9999"><br>
+                      <label for="cc_type">Credit Card Type:</label>
+                              <select name="cc_type" id="cc_type">
+                                  <option value="v">Visa</option>
+                                  <option value="m">Master Card</option>            
+                                  <option value="x">American Express</option>
+                              </select><br>
+                      <label for="card_number">Credit Card Number:</label>
+                          <input type="text" name="card_number" id="card_number"><br>
+                      <label for="expiry_date">Expiration Date:</label>
+                              <select name="expiry_month" id="expiry_month">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>				
+                                <option value="04">04</option>
+                                <option value="05">05</option>
+                                <option value="06">06</option>
+                                <option value="07">07</option>
+                                <option value="08">08</option>
+                                <option value="09">09</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <select name="expiry_year" id="expiry_year">
+                                <option value="2015">2015</option>
+                                <option value="2016">2016</option>
+                                <option value="2017">2017</option>				
+                                <option value="2018">2018</option>
+                                <option value="2019">2019</option>
+                                <option value="2020">2020</option>
+                                <option value="2018">2021</option>
+                                <option value="2019">2022</option>
+                                <option value="2020">2023</option>
+                            </select><br>			
+                    </fieldset>
+                    <fieldset id="buttons">
+                      <legend>Submit Your Membership</legend>
+                        <label>&nbsp;</label>
+                          <input class="w3-yellow w3-hover-white" type="submit" id="submit" value="Submit">
+                          <input class="w3-yellow w3-hover-white" type="reset" id="reset" value="Reset"><br>
+                  </fieldset>
+                  <div class="w3-third w3-row">
+                    <a class="w3-orange" href="validation.html">Becoome a member today to qualify for more benefits</a>
+                    <a class="w3-red" href="index.html">exit</a>
+                  </div>
+              </form>
+    </main>
+  </div>
+</div> 
 </body>
 </html>
