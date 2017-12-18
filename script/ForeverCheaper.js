@@ -30,14 +30,14 @@ $(document).ready(function() {
             
             // add selection to text and total
             if (oldURL == "images/iPhone8-foreverCheaper.jpg") {
-                total = total + 195;
+                total = total + 799.99;
                 order = order + '<option value="iPhone8-foreverCheaper">- iPhone 8: $195 </option>';//values to display in box
             }
              else if (oldURL == "images/acerPC-foreverCheaper.jpg") {
                 total = total + 249.99;
                 order = order + '<option value="acerPC-foreverCheaper">-Acer chromebook: $249.99 </option>';
             }
-             else if (oldURL == "images/images/alcatelPlus-foreverCheaper.jpg") {
+             else if (oldURL == "images/alcatelPlus-foreverCheaper.jpg") {
                 total = total + 501.05;
                 order = order + '<option value="images/alcatelPlus-foreverCheaper">- Alcatel Plus: $501.05 </option>';
             } 
