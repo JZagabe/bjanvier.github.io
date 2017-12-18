@@ -12,7 +12,8 @@ $(document).ready(function() {
         rolloverImage.src = newURL;
         
         // set up event handlers
-        $(this).hover(            function() {
+        $(this).hover(
+            function() {
                 $(this).attr("src", newURL); // sets the src attribute
             },
             function() {
