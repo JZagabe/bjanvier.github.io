@@ -31,7 +31,7 @@ $(document).ready(function() {
             // add selection to text and total
             if (oldURL == "images/iPhone8-foreverCheaper.jpg") {
                 total = total + 799.99;
-                order = order + '<option value="iPhone8-foreverCheaper">- iPhone 8: $195 </option>';//values to display in box
+                order = order + '<option value="iPhone8-foreverCheaper">- iPhone 8: $799.99 </option>';//values to display in box
             }
              else if (oldURL == "images/acerPC-foreverCheaper.jpg") {
                 total = total + 249.99;
