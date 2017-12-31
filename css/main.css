@@ -29,7 +29,7 @@
 #title {
   font-family: 'Galada';font-size: 32px;
 }
-body, .drop_down, #try, #title, #nav_click, #main_title i b, #AboutUs, #ContactUs, #menu,#content, #JoinUs,#myTitle {
+body, .drop_down, #try, #title, #nav_click, #main_title i b,#myTitle {
   background: -webkit-linear-gradient(rgb(10, 1, 1), 
   rgb(0, 0, 0), rgb(190, 191, 202), 
   rgb(0, 0, 0), rgb(0, 0, 0), rgb(0, 0, 0), 
